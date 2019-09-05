@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css?family=Saira+Condensed:300,400,500&display=swap&subset=latin-ext");
+
+$fontFamily: "Saira Condensed", sans-serif !important;
+$doisEm: 1em 1em !important;
+$heightFooter: 50px !important;
+
+html * {
+  font-family: $fontFamily;
+}
+
+.myFooter{
+  margin: $doisEm;
+  padding: $doisEm;
+  height: $heightFooter
+}
