@@ -1,28 +1,94 @@
-<div class="w3-row  w3-margin w3-display-middle" style="width: 100%">
+<div class="w3-row w3-display-middle" style="width: 100%">
     <div class="w3-col s6">
-        <div class="w3-center">
-            <img src="./img/engine-250.png" class="w3-center w3-image" alt="Engine">
+        <div class="w3-center" >
+            <img src="./img/engine-250.png" class="w3-image" alt="Engine" onload="getJson()">
         </div>
     </div>
-    <div class="w3-col s5 w3-center">
-        <div class="w3-panel ">
-            <h1 class="w3-left">Engine.</h1>
+    <div class="w3-col s5 ">
+        <div class="w3-panel w3-section">
+            <h1 class="w3-left">Engine</h1>
         </div>
-        <div class="w3-panel ">
-            <p>I am a panel.</p>
+        <div class="w3-panel w3-section theme-grayLight divType">
+            <div class="w3-row">
+                <div class="w3-col s3">
+                    <span class="km_h"></span>
+                    <span class="type"></span>
+                </div>
+                <div class="w3-col s3">
+                    <span class="km_h"></span> kWh
+                </div>
+                <div class="w3-col s3">
+                    <span id="milesRange"></span> miles range
+                </div>
+                <div class="w3-col s3">
+                    <input class="w3-radio" type="radio" name="engine" id="escolhaTypeOne" value=""
+                        onchange="calcPriceTypeOne()">
+                </div>
+            </div>
         </div>
-        <div class="w3-panel ">
-            <p>I am a panel.</p>
+
+        <div class="w3-panel" id="feedbackPrice1"></div>
+
+        <div class="w3-panel w3-section theme-grayLight divType2">
+            <div class="w3-row">
+                <div class="w3-col s3">
+                    <span class="km_h2"></span>
+                    <span class="type2"></span>
+                </div>
+                <div class="w3-col s3">
+                    <span class="km_h2"></span> kWh
+                </div>
+                <div class="w3-col s3">
+                    <span id="milesRange2"></span> miles range
+                </div>
+                <div class="w3-col s3">
+                    <input class="w3-radio" type="radio" name="engine" id="escolhaTypeTwo" value=""
+                        onchange="calcPriceTypeTwo()">
+                </div>
+            </div>
         </div>
-        <div class="w3-panel ">
-            <p>I am a panel.</p>
+
+        <div class="w3-panel" id="feedbackPrice2"></div>
+
+        <div class="w3-panel w3-section theme-grayLight divType3">
+            <div class="w3-row">
+                <div class="w3-col s3">
+                    <span class="km_h3"></span>
+                    <span class="type3"></span>
+                </div>
+                <div class="w3-col s3">
+                    <span class="km_h3"></span> kWh
+                </div>
+                <div class="w3-col s3">
+                    <span id="milesRange3"></span> miles range
+                </div>
+                <div class="w3-col s3">
+                    <input class="w3-radio" type="radio" name="engine" id="escolhaTypeThree" value=""
+                        onchange="calcPriceTypeThree()">
+                </div>
+            </div>
         </div>
+
+        <div class="w3-panel" id="feedbackPrice3"></div>
     </div>
 </div>
 
-<footer class="w3-container w3-bottom w3-mobile" onload="getJson()" style="margin: 1em 1em; padding: 1em 1em; height:50px;">
-    <div class="w3-display-left">
-        <span class="w3-text-gray w3-display-top">Total</span>
-        <h6 class="w3-display-bottom" style="padding: 0; margin: 0;">From 0 to 100</h6>
+<footer class="w3-container w3-bottom w3-mobile w3-margin-right" style=" height:50px;">
+    <div class="w3-row w3-margin-right">
+        <div class="w3-col s3">
+            <span class="w3-text-gray w3-display-top w3-padding-small" style="padding-bottom: 0;">Total</span>
+            <h6 class="w3-display-bottom" id="total" style="margin-top: 0; color: #AB1725"></h6>
+        </div>
+        <div class="w3-col s3">
+            <span class="w3-display-top">Model R</span>
+        </div>
+        <div class="w3-col s3">
+            <span class="km_h" id="kmhModelR"></span> <span class="w3-text-red type" id="typeModelR"></span>
+        </div>
+        <div class="w3-rest w3-display-right w3-margin-right">
+            <button class="w3-btn w3-white w3-border-0 w3-mobile" onclick="selectColor()">Next <i class="fa fa-arrow-right"
+                    style="font-size:20px;color:red; "></i></button>
+        </div>
     </div>
+
 </footer>

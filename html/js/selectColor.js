@@ -1,0 +1,1 @@
+document.getElementById("total").innerHTML = localStorage.getItem("totalTemp");

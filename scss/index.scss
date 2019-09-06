@@ -1,15 +1,44 @@
 @import url("https://fonts.googleapis.com/css?family=Saira+Condensed:300,400,500&display=swap&subset=latin-ext");
 
-$fontFamily: "Saira Condensed", sans-serif !important;
-$doisEm: 1em 1em !important;
-$heightFooter: 50px !important;
+$fontFamily: "Saira Condensed", sans-serif;
+$doisEm: 1em 1em;
+$heightFooter: 50px;
+$colorRed: #ab1725;
+$fontWeight: 700;
 
 html * {
   font-family: $fontFamily;
 }
 
-.myFooter{
+.myFooter {
   margin: $doisEm;
   padding: $doisEm;
-  height: $heightFooter
+  height: $heightFooter;
+}
+
+.theme-grayLight {
+  background-color: #fafafa !important;
+}
+
+@mixin fontWeight-color {
+  font-weight: $fontWeight;
+  color: $colorRed;
+}
+
+.divType3:hover {
+  .type3 {
+    @include fontWeight-color;
+  }
+}
+
+.divType2:hover {
+  .type2 {
+    @include fontWeight-color;
+  }
+}
+
+.divType:hover {
+  .type {
+    @include fontWeight-color;
+  }
 }
