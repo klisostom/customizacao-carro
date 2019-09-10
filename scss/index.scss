@@ -42,3 +42,45 @@ html * {
     @include fontWeight-color;
   }
 }
+
+@mixin borderColorHover {
+  border-color: #262626;
+}
+
+@mixin circuloColor {
+  border-style: solid;
+  border-width: 10px;
+  border-color: #f2f2f2;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  float: left;
+  margin: 15px;
+}
+.circuloBlue {
+  @include circuloColor;
+  background-color: rgb(0, 81, 255);
+}
+
+.circuloBlue:hover {
+  @include borderColorHover;
+}
+
+.circuloRed {
+  @include circuloColor;
+  background-color: #ab1725;
+}
+
+.circuloRed:hover {
+  @include borderColorHover;
+}
+
+.circuloBlack {
+  @include circuloColor;
+  background-color: #0f1c2d;
+}
+
+.circuloBlack:hover {
+  @include borderColorHover;
+}

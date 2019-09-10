@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Result</title>
+    <link rel="stylesheet" href="../css/index.css">
+
+    <!-- W3 CSS -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <!-- FontAwersome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top w3-mobile">
+        <div class="w3-bar w3-white w3-padding w3-card w3-mobile" style="letter-spacing:4px;">
+            <a href="http://localhost/teste/home.html" class="w3-bar-item w3-button"><span
+                    class="w3-text-red w3-mobile" onclick="clearData()">RED</span>|VENTURES</a>
+            <!-- Right-sided navbar links. Hide them on small screens -->
+            <div class="w3-right w3-hide-small w3-mobile">
+                <a href="http://localhost/teste/home.html" class="w3-bar-item w3-button w3-mobile" onclick="clearData()">Model R</a>
+                <a href="#menu" class="w3-bar-item w3-button w3-mobile">Model IQ</a>
+                <a href="#contact" class="w3-bar-item w3-button w3-mobile">Model Mobi</a>
+                <a href="#contact" class="w3-bar-item w3-button w3-mobile">Model Charlie</a>
+                <a href="#contact" class="w3-bar-item w3-button w3-mobile">Model Italy</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-display-middle w3-mobile" style="width: 100%">
+        <div class="w3-col s5 w3-mobile">
+            <div class="w3-center">
+                <img src="../img/resultBlack.png" class="w3-image w3-mobile" alt="Car" onload="">
+            </div>
+        </div>
+
+        <div class="w3-col s5 w3-mobile">
+            <div class="w3-cell-row">
+                <div class="w3-container w3-cell">
+                    <h2>Your Model <span class="w3-text-red">R</span></h2>
+                </div>
+            </div>
+
+            <div class="w3-cell-row">
+                <div class="w3-container w3-cell">
+                    <header>Starting price</header>
+                </div>
+                <div class="w3-container w3-cell w3-right-align">
+                    <header id="startingPrice" class="w3-text-red"></header>
+                </div>
+            </div>
+
+            <hr>
+            <div class="w3-cell-row">
+                <div class="w3-container w3-cell">
+                    <header id="kt-miles"></header>
+                </div>
+                <div class="w3-container w3-cell w3-right-align">
+                    <header id="kt-milesPrice" class="w3-text-red"></header>
+                </div>
+            </div>
+
+            <div class="w3-cell-row">
+                <div class="w3-container w3-cell">
+                    <header id="cor"></header>
+                </div>
+                <div class="w3-container w3-cell w3-right-align">
+                    <header id="corPrice" class="w3-text-red"></header>
+                </div>
+            </div>
+
+            <div class="w3-cell-row">
+                <div class="w3-container w3-cell">
+                    <header id="wheels"></header>
+                </div>
+                <div class="w3-container w3-cell w3-right-align">
+                    <header id="wheelsPrice" class="w3-text-red"></header>
+                </div>
+            </div>
+
+            <hr>
+            <br>
+            <div class="w3-cell-row">
+                <div class="w3-container w3-cell">
+                    <header>Final Price</header>
+                </div>
+                <div class="w3-container w3-cell w3-right-align">
+                    <header id="finalPrice" class="w3-text-red"></header>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer class="w3-container w3-bottom w3-mobile w3-margin-right w3-mobile" style=" height:50px;">
+        <div class="w3-row w3-margin-right w3-mobile">
+
+            <div class="w3-rest w3-display-right w3-margin-right w3-mobile">
+                <a class="w3-btn w3-white w3-border-0 w3-mobile" href="../html/result.html" onclick="clearData()">Rebuild <i
+                        class="fa fa-arrow-right" style="font-size:20px;color:red; "></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ====== Scripts =========  -->
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+    <script src="../js/compilado/result.js"></script>
+    <script>
+        function clearData() {
+            localStorage.clear();
+        }
+    </script>
+</body>
+
+</html>

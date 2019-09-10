@@ -1,23 +1,97 @@
-<h1 class="w3-display-bottommiddle">Olá</h1>
+<!DOCTYPE html>
+<html lang="en">
 
-<footer class="w3-container w3-bottom w3-mobile w3-margin-right" style=" height:50px;">
-    <div class="w3-row w3-margin-right">
-        <div class="w3-col s3">
-            <span class="w3-text-gray w3-display-top w3-padding-small" style="padding-bottom: 0;">Total</span>
-            <h6 class="w3-display-bottom" id="total" style="margin-top: 0; color: #AB1725"></h6>
-        </div>
-        <div class="w3-col s3">
-            <span class="w3-display-top">Model R</span>
-        </div>
-        <div class="w3-col s3">
-            <span class="km_h" id="kmhModelR"></span> <span class="w3-text-red type" id="typeModelR"></span>
-        </div>
-        <div class="w3-rest w3-display-right w3-margin-right">
-            <button class="w3-btn w3-white w3-border-0 w3-mobile" onclick="selectColor()">Next <i
-                    class="fa fa-arrow-right" style="font-size:20px;color:red; "></i></button>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Color</title>
+    <link rel="stylesheet" href="../css/index.css">
+
+    <!-- W3 CSS -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <!-- FontAwersome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top w3-mobile">
+        <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
+            <a href="http://localhost/teste/home.html" class="w3-bar-item w3-button"><span
+                    class="w3-text-red ">RED</span>|VENTURES</a>
+            <!-- Right-sided navbar links. Hide them on small screens -->
+            <div class="w3-right w3-hide-small">
+                <a href="http://localhost/teste/home.html" class="w3-bar-item w3-button">Model R</a>
+                <a href="#menu" class="w3-bar-item w3-button">Model IQ</a>
+                <a href="#contact" class="w3-bar-item w3-button">Model Mobi</a>
+                <a href="#contact" class="w3-bar-item w3-button">Model Charlie</a>
+                <a href="#contact" class="w3-bar-item w3-button">Model Italy</a>
+            </div>
         </div>
     </div>
 
-</footer>
+    <div class="w3-mobile w3-display-middle" style="width: 100%">
+        <div class="w3-col s6" id="imgColor">
+            <picture class="w3-mobile">
+                <source media="(min-width: 1280px)" sizes="50vw" srcset="../img/color-red-200.png 200w,  				
+                        ../img/color-red-400.png 400w,			
+                        ../img/color-red-600.png 600w">
+                <img src="../img/color-red.png" class="w3-image" id="color" alt="color"
+                    sizes="(min-width: 640px) 60vw, 100vw" srcset="../img/color-200.png 200w,  				
+                            ../img/color-red-400.png 400w,				
+                            ../img/color-red-600.png 600w">
 
-<script src="./js/selectColor.js"></script>
+            </picture>
+            <div class="w3-container" style="margin-left: 10%;">
+                <h4 id="labelInitial"></h4>
+                <h6 id="priceColorInitial" class="w3-text-red"></h6>
+            </div>
+        </div>
+
+        <div class="w3-col s5 w3-mobile w3-margin-right">
+            <div class="w3-panel w3-section">
+                <div class="w3-panel w3-section">
+                    <h1 class="w3-left">Color</h1>
+                </div>
+                <p class="w3-left-align w3-text-gray" id="colorDescription">
+                </p>
+
+                <!-- <button class="w3-button w3-circle w3-teal w3-border  w3-xxlarge w3-border-red w3-hover-border-blue" style="border: 16px"></button> -->
+                <div class="w3-bar">
+                    <button class="circuloBlue" onclick="colorBlue()"></button>
+                    <button class="circuloRed" onclick="colorRed()"></button>
+                    <button class="circuloBlack" onclick="colorBlack()"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="w3-container w3-bottom w3-mobile w3-margin-right" style=" height:50px;">
+        <div class="w3-row w3-margin-right">
+            <div class="w3-col s3">
+                <span class="w3-text-gray w3-display-top w3-padding-small" style="padding-bottom: 0;">Total</span>
+                <h6 class="w3-display-bottom" id="totalOnColorMode" style="margin-top: 0; color: #AB1725"></h6>
+            </div>
+            <div class="w3-col s3">
+                <span class="w3-display-top">Model R</span>
+            </div>
+            <div class="w3-col s3">
+                <span class="km_h" id="kmhModelR"></span> <span class="w3-text-red type" id="typeModelR"></span>
+            </div>
+            <div class="w3-rest w3-display-right w3-margin-right">
+                <a class="w3-btn w3-white w3-border-0 w3-mobile" href="wheels.html">Next <i class="fa fa-arrow-right"
+                        style="font-size:20px;color:red; "></i></a>
+            </div>
+        </div>
+
+    </footer>
+
+    <!-- ====== Scripts =========  -->
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+    <script src="../js/compilado/selectColor.js"></script>
+</body>
+
+</html>
