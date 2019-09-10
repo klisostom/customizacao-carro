@@ -1,4 +1,4 @@
-# customizacao-carro
+# Car customization
 > Trata-se de uma aplicação que simula a customização de um carro. 
 
 * Página inicial
